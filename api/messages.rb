@@ -13,16 +13,12 @@ post '/' do
   end
 end
 
-put '/:id' do
+delete '/:id' do
   message = Message.find(params[:id])
 
-  request.body.rewind
-  data = JSON.parse request.body.read
-
-  if message.update_attribute(:text, data['text'])
+  if message.destroy
     message.to_json
   else
     [500, 'Error']
   end
-
 end

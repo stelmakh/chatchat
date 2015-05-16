@@ -1,0 +1,6 @@
+How to run the app:
+
+1. bundle install
+2. cd client/ && bower install
+3. cd .. && ruby app.rb
+4. open client/index.html
