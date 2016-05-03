@@ -4,3 +4,4 @@ How to run the app:
 2. cd client/ && bower install
 3. cd .. && ruby app.rb
 4. open client/index.html
+Hurray!
